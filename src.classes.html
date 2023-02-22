@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module src.classes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="src.html"><font color="#ffffff">src</font></a>.classes</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/ethanhenderson/Programs/Work/doctests/pydoc/src/classes.py">/Users/ethanhenderson/Programs/Work/doctests/pydoc/src/classes.py</a></font></td></tr></table>
+    <p><tt>A&nbsp;test&nbsp;file&nbsp;for&nbsp;documentation&nbsp;layout&nbsp;malarcky<br>
+&nbsp;<br>
+Now&nbsp;with&nbsp;more&nbsp;than&nbsp;one&nbsp;line!</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="src.classes.html#Person">Person</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="src.classes.html#Employee">Employee</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Employee">class <strong>Employee</strong></a>(<a href="src.classes.html#Person">Person</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Employee">Employee</a>(name:&nbsp;str,&nbsp;age:&nbsp;int,&nbsp;*,&nbsp;jobs:&nbsp;Optional[List[str]]&nbsp;=&nbsp;None)&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+A&nbsp;representation&nbsp;of&nbsp;an&nbsp;employee.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+name&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;full&nbsp;name&nbsp;of&nbsp;the&nbsp;person.<br>
+age&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;person's&nbsp;age.<br>
+jobs&nbsp;:&nbsp;List[str],&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;list&nbsp;of&nbsp;jobs&nbsp;the&nbsp;employee&nbsp;has&nbsp;had.<br>
+&nbsp;<br>
+Examples<br>
+--------<br>
+&gt;&gt;&gt;&nbsp;employee&nbsp;=&nbsp;<a href="#Employee">Employee</a>("John&nbsp;Smith",&nbsp;1103,&nbsp;jobs=["Doctor",&nbsp;"Time&nbsp;Traveller"])<br>
+&gt;&gt;&gt;&nbsp;employee<br>
+<a href="#Employee">Employee</a>('John&nbsp;Smith',&nbsp;1103,&nbsp;jobs=['Doctor',&nbsp;'Time&nbsp;Traveller'])<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="src.classes.html#Employee">Employee</a></dd>
+<dd><a href="src.classes.html#Person">Person</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Employee-__init__"><strong>__init__</strong></a>(self, name: str, age: int, *, jobs: Optional[List[str]] = None) -&gt; None</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Employee-__repr__"><strong>__repr__</strong></a>(self) -&gt; str</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>latest_job</strong></dt>
+<dd><tt>Returns&nbsp;the&nbsp;latest&nbsp;job&nbsp;of&nbsp;the&nbsp;employee.<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;employee&nbsp;has&nbsp;had&nbsp;no&nbsp;jobs,&nbsp;this&nbsp;will&nbsp;return&nbsp;`None`.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+Optional[str]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;employee's&nbsp;latest&nbsp;job,&nbsp;if&nbsp;applicable.<br>
+&nbsp;<br>
+!!!&nbsp;warning<br>
+&nbsp;&nbsp;&nbsp;&nbsp;In&nbsp;the&nbsp;real&nbsp;world,&nbsp;this&nbsp;should&nbsp;never&nbsp;be&nbsp;`None`.</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="src.classes.html#Person">Person</a>:<br>
+<dl><dt><a name="Employee-build_profile"><strong>build_profile</strong></a>(self, end: str = '.') -&gt; str</dt><dd><tt>Constructs&nbsp;a&nbsp;basic&nbsp;profile&nbsp;for&nbsp;the&nbsp;person.<br>
+&nbsp;<br>
+Parameters:<br>
+end&nbsp;(str,&nbsp;optional):&nbsp;The&nbsp;character&nbsp;the&nbsp;profile&nbsp;sentence&nbsp;should<br>
+end&nbsp;with.&nbsp;Defaults&nbsp;to&nbsp;a&nbsp;full&nbsp;stop.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;constructed&nbsp;profile.<br>
+&nbsp;<br>
+Raises<br>
+------<br>
+ValueError<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;end&nbsp;character&nbsp;is&nbsp;not&nbsp;a&nbsp;full&nbsp;stop&nbsp;or&nbsp;exclamation&nbsp;mark.<br>
+&nbsp;<br>
+Examples<br>
+--------<br>
+&gt;&gt;&gt;&nbsp;profile.<a href="#Employee-build_profile">build_profile</a>()<br>
+'My&nbsp;name&nbsp;is&nbsp;John&nbsp;Smith&nbsp;and&nbsp;I&nbsp;am&nbsp;1,103&nbsp;years&nbsp;old.'</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="src.classes.html#Person">Person</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Person">class <strong>Person</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Person">Person</a>(name:&nbsp;str,&nbsp;age:&nbsp;int)&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+A&nbsp;representation&nbsp;of&nbsp;a&nbsp;person.<br>
+&nbsp;<br>
+This&nbsp;serves&nbsp;as&nbsp;a&nbsp;more&nbsp;basic&nbsp;representation,&nbsp;leaving&nbsp;out&nbsp;many&nbsp;things<br>
+including&nbsp;gender&nbsp;and&nbsp;job&nbsp;roles.<br>
+&nbsp;<br>
+&gt;&gt;&gt;&nbsp;person&nbsp;=&nbsp;<a href="#Person">Person</a>("John&nbsp;Smith",&nbsp;1103)<br>
+&gt;&gt;&gt;&nbsp;person<br>
+<a href="#Person">Person</a>(name='John&nbsp;Smith',&nbsp;age=24)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Person-__init__"><strong>__init__</strong></a>(self, name: str, age: int) -&gt; None</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Person-__repr__"><strong>__repr__</strong></a>(self) -&gt; str</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="Person-build_profile"><strong>build_profile</strong></a>(self, end: str = '.') -&gt; str</dt><dd><tt>Constructs&nbsp;a&nbsp;basic&nbsp;profile&nbsp;for&nbsp;the&nbsp;person.<br>
+&nbsp;<br>
+Parameters:<br>
+end&nbsp;(str,&nbsp;optional):&nbsp;The&nbsp;character&nbsp;the&nbsp;profile&nbsp;sentence&nbsp;should<br>
+end&nbsp;with.&nbsp;Defaults&nbsp;to&nbsp;a&nbsp;full&nbsp;stop.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;constructed&nbsp;profile.<br>
+&nbsp;<br>
+Raises<br>
+------<br>
+ValueError<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;end&nbsp;character&nbsp;is&nbsp;not&nbsp;a&nbsp;full&nbsp;stop&nbsp;or&nbsp;exclamation&nbsp;mark.<br>
+&nbsp;<br>
+Examples<br>
+--------<br>
+&gt;&gt;&gt;&nbsp;profile.<a href="#Person-build_profile">build_profile</a>()<br>
+'My&nbsp;name&nbsp;is&nbsp;John&nbsp;Smith&nbsp;and&nbsp;I&nbsp;am&nbsp;1,103&nbsp;years&nbsp;old.'</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>List</strong> = typing.List<br>
+<strong>Optional</strong> = typing.Optional</td></tr></table>
+</body></html>
